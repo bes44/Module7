@@ -15,7 +15,7 @@ package filterFun
 */
 
 private fun Int.endsWith( key:Int): Boolean {
-//    println("${this} ${ this % 10 }")
+ //   println("${this} ${ this % 10 }")
     return (this % 10 == key)
 }
 
@@ -37,7 +37,9 @@ fun main() {
         10 to 30,
         15 to 22,
         25 to 15,
-        35 to 50
+        35 to 50,
+        105 to 50,
+        1005 to 50,
     )
 
     val filteredPrizeMap = prizeMap.filter { (key, value) -> (key.endsWith(5) && value > 20) }
